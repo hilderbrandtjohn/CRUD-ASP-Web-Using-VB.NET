@@ -14,6 +14,7 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtProductId" runat="server" Font-Size="Medium" Width="200px"></asp:TextBox>
+                    <asp:Button Text="Search" runat="server" ForeColor="White" BackColor="BlueViolet" ID="ButtonSearch" OnClick="ButtonSearch_Click"/>
                 </td>
             </tr>
             <tr>
@@ -96,6 +97,7 @@
                 <td>
                     <asp:Button runat="server" ID="insertbutton" Text="Insert" BackColor="blueviolet" ForeColor="White" OnClick="insertbutton_Click" />
                     <asp:Button Text="Update" runat="server" ID="ButtonUpdate" ForeColor="White" BackColor="BlueViolet" OnClick="ButtonUpdate_Click" />
+                    <asp:Button Text="Delete" runat="server" ID="ButtonDelete" BackColor="Red" ForeColor="White" OnClick="ButtonDelete_Click" OnClientClick="return confirm('Are you sure you wannt to delete?');"/>
                 </td>
             </tr>
         </table>

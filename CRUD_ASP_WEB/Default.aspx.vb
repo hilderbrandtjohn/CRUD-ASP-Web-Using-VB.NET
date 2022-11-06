@@ -60,9 +60,31 @@ Public Class _Default
         connect.Open()
         Dim command As New SqlCommand("update ProductInfo_Tab set Itemname='" & itemname & "',Specification='" & specification & "',Unit='" & unit & "',Color='" & color & "',InsertDate='" & insertdate & "',Opening= '" & opening & "',Status='" & status & "' where ProductID='" & productid & "' ", connect)
         command.ExecuteNonQuery()
-        MsgBox("Updated Inserted", MsgBoxStyle.Information, "Message")
+        MsgBox("Succesfuly Updated", MsgBoxStyle.Information, "Message")
         connect.Close()
         ListProduct()
 
+    End Sub
+
+    Protected Sub ButtonDelete_Click(sender As Object, e As EventArgs)
+        Dim connect As New SqlConnection("Data Source=DESKTOP-KO3PIEN\MSSQLSERVER1;Initial Catalog=CRUDTutorial_DB;Persist Security Info=True;User ID=sa;Password=0723368444")
+        Dim productid As Integer = txtProductId.Text
+
+        connect.Open()
+        Dim command As New SqlCommand("delete ProductInfo_Tab where ProductID='" & productid & "'", connect)
+        command.ExecuteNonQuery()
+        MsgBox("Succesfully Deleted", MsgBoxStyle.Information, "Message")
+        connect.Close()
+        ListProduct()
+    End Sub
+
+    Protected Sub ButtonSearch_Click(sender As Object, e As EventArgs)
+        Dim productid As Integer = txtProductId.Text
+        Dim command As New SqlCommand("select * from ProductInfo_Tab where ProductID='" & productid & "'", connect)
+        Dim sd As New SqlDataAdapter(command)
+        Dim dt As New DataTable
+        sd.Fill(dt)
+        Gridview1.DataSource = dt
+        Gridview1.DataBind()
     End Sub
 End Class

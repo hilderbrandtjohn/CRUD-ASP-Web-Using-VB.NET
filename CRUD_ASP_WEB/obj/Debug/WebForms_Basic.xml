@@ -55,6 +55,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:CRUD_ASP_WEB._Default._ButtonSearch">
+<summary>
+ButtonSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:CRUD_ASP_WEB._Default._Label2">
 <summary>
 Label2 control.
@@ -193,6 +202,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:CRUD_ASP_WEB._Default._ButtonUpdate">
 <summary>
 ButtonUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:CRUD_ASP_WEB._Default._ButtonDelete">
+<summary>
+ButtonDelete control.
 </summary>
 <remarks>
 Auto-generated field.

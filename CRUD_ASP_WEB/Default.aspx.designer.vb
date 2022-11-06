@@ -32,6 +32,15 @@ Partial Public Class _Default
     Protected WithEvents txtProductId As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''ButtonSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ButtonSearch As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Label2 control.
     '''</summary>
     '''<remarks>
@@ -174,6 +183,15 @@ Partial Public Class _Default
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ButtonUpdate As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''ButtonDelete control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ButtonDelete As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Gridview1 control.
